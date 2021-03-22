@@ -18,6 +18,8 @@ defmodule DiscussWeb.Router do
 
     get "/", PageController, :index
     get "/users", PageController, :show_users
+    get "/topics/new", TopicController, :new
+    post "/topics", TopicController, :create
   end
 
   # Other scopes may use custom stacks.
